@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ScheduleModule } from '@nestjs/schedule';
 
 import configuration from './config';
+import { FlowerModule } from './modules/flower/flower.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import configuration from './config';
         configService.get('database'),
       inject: [ConfigService],
     }),
+    FlowerModule,
   ],
 })
 export class AppModule {}
