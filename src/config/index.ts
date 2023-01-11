@@ -29,14 +29,6 @@ export default (): IConfig => ({
     },
   },
 
-  awsS3: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    region: process.env.AWS_REGION,
-    bucket: process.env.AWS_BUCKET,
-    acl: process.env.AWS_ACL,
-  },
-
   newPasswordBytes: 4,
   codeBytes: 2,
 });

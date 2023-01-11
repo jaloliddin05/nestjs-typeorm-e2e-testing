@@ -18,18 +18,9 @@ interface IDatabase {
   };
 }
 
-interface IAwsS3 {
-  accessKeyId: string;
-  secretAccessKey: string;
-  region: string;
-  bucket: string;
-  acl: string;
-}
-
 export interface IConfig {
   port: number;
   database: IDatabase;
   newPasswordBytes: number;
-  awsS3: IAwsS3;
   codeBytes: number;
 }
